@@ -11,7 +11,7 @@ if "lista_productos" not in st.session_state:
 nuevo_producto = st.text_input("Producto:")
 if nuevo_producto:
     st.session_state.lista_productos.append(nuevo_producto)
-    st.experimental_rerun()  # Refresca para limpiar input
+    st.rerun()  # Refresca para limpiar input
 
 # Mostrar la lista actual
 if st.session_state.lista_productos:
